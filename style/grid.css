@@ -2,7 +2,7 @@ html{
     box-sizing: border-box;
 }
 *,*::after,*::before{
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 .container{
     width: 100%;
