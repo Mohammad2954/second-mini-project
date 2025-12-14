@@ -30,6 +30,7 @@ body{
     font-family: var(--pop-r);
     font-size: 1.6rem;
     font-weight: 1.5;
+    
 }
 a{
     text-decoration: none;
@@ -229,7 +230,7 @@ component
     -moz-border-radius: 3rem;
     -ms-border-radius: 3rem;
     -o-border-radius: 3rem;
-    width: 18rem;
+    width: 17rem;
     height: 6rem;
     align-items: center;
     display: flex;
@@ -253,4 +254,94 @@ component
     box-shadow: 0 0 4rem rgba(96,233,255,0.27);
     background-position-x: center;
     border: 2rem solid var(--bgcolor);
+}
+/*
+===============
+    about
+===============
+*/
+.section-head{
+    margin: 8rem auto;
+    width: 24rem;
+    text-align: center;
+}
+.section-head__title{
+    font-family: var(--pop-bo);
+    color: var(--base-coler);
+    font-size: 4.8rem;
+}
+.section-head__caption{
+    color: var(--base-coler);
+    margin: 1rem 0 2rem 0;
+    letter-spacing: 0.25rem;
+}
+.section-head__line{
+    border: 1px solid var(--base-coler);
+    display: block;
+}
+.section-head__line::before{
+    position: absolute;
+    content: " ";
+    width: 3rem;
+    height: 1rem;
+    background-color: var(--base-coler);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 5rem;
+    top: 9rem;
+}
+.about{
+    display: flex;
+}
+.about-cover{
+    width: 50%;
+    background-image: url(../images/image/about-us-man.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.about-content{
+    width: 50%;
+    padding: 5rem 4rem;
+}
+.about-content__title{
+    font-family: var(--pop-s);
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+.about-content__caption{
+    color: var(--text-color);
+    line-height: 2rem;
+    text-align: justify;
+}
+.about-title{
+    font-family: var(--pop-s);
+    font-size: 1.8rem;
+    color: var(--base-coler);
+    margin-top: 8rem;
+}
+.about-list{
+
+}
+.about-list__item{
+    color: var(--text-color);
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.about-list__item::before{
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--orenge);
+    border-radius: 5rem;
+    margin-top: 2px;
+    margin-left: -2rem;
 }

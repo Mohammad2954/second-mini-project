@@ -17,6 +17,9 @@
         margin-bottom: 6rem;
         margin-top: -14rem;
     }
+    .home___link-wrapper{
+        justify-content: center;
+    }
     .menu{
         gap: 2rem;
     }
@@ -29,11 +32,21 @@
     .align-item-center{
         flex-direction: column-reverse;
     }
-    .home___link-wrapper{
-        justify-content: center;
+    .about-content{
+        padding-left: 0;
     }
     .home__caption{
         text-align: center;
+    }
+    .about{
+        flex-flow: column;
+    }
+    .about-cover{
+       width: 100%;
+       height: 44rem;
+    }
+    .about-content{
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -66,9 +79,6 @@
 
     .nav__toggle-icon{
         display: flex;
-    }
-    .home{
-        background-image: none;
     }
 }
 @media screen and (max-width: 576px) {
