@@ -7,6 +7,7 @@
     <link rel="icon" href="./images/image/WA..png">
     <link rel="stylesheet" href="./style/app.css">
     <link rel="stylesheet" href="./style/resposive.css">
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header">
@@ -274,9 +275,84 @@
                 </div>
             </div>
         </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="section-head">
+                    <h3 class="section-head__title">Portfolio</h3>
+                    <p class="section-head__caption">Check in Our Latest Works</p>
+                    <span class="section-head__line"></span>
+            </div>
+            <ul class="portfolio-list">
+                <li class="portfolio-list__item portfolio-list__item--active" id-conent="#all-work">All Work</li>
+                <li class="portfolio-list__item" id-conent="#illustration">Illustration</li>
+                <li class="portfolio-list__item" id-conent="#animation">Animation</li>
+                <li class="portfolio-list__item" id-conent="#">App UI</li>
+                <li class="portfolio-list__item" id-conent="#">Web UI</li>
+                <li class="portfolio-list__item" id-conent="#">Social Media</li>
+                <li class="portfolio-list__item" id-conent="#">Print Design</li>
+            </ul>
+            <div class="portfolio-content portfolio-content--show" id="all-work">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-2.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-1.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-3.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-1.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-2.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-3.jpg" alt="portfolio"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="portfolio-content" id="illustration">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-3.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-1.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-2.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-1.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-2.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-3.jpg" alt="portfolio"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="portfolio-content" id="animation">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-2.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-3.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-1.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-1.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-2.jpg" alt="portfolio"></div>
+                        <div class="swiper-slide"><img class="swiper-slider__img" src="./images/image/portfolio-3.jpg" alt="portfolio"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            </div>
+        </section>
         
     </main>   
 
 <script src="./scripte/app.js"></script>
+<script src="./scripte/swiper-bundle.min.js"></script>
+<script>
+    const swiper=new Swiper('.swiper',{
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints:{
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1200:{
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    })
+</script>
 </body>
 </html>

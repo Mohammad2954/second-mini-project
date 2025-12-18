@@ -272,7 +272,7 @@ component
 */
 .section-head{
     margin: 8rem auto;
-    width: 24rem;
+    width: 27rem;
     text-align: center;
     position: relative;
 }
@@ -289,6 +289,8 @@ component
 .section-head__line{
     border: 1px solid var(--base-coler);
     display: block;
+    width: 24rem;
+    margin: 0 auto;
 }
 .section-head__line::before{
     position: absolute;
@@ -563,4 +565,69 @@ component
     font-family: var(--pop-s);
     margin-bottom: 1rem;
 }
-.resume-content__caption{}
+/*
+=====================
+    portfolio
+=====================
+*/
+
+.portfolio{
+    margin-top: 15rem;
+}
+.portfolio-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+.portfolio-list__item{
+    padding: 1.2rem 3rem;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+.portfolio-list__item--active{
+    color: #fff;
+    background-color: var(--base-coler);
+}
+.portfolio-content{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+.portfolio-content--show{
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+}
+.swiper-slider__img{
+    width: 100%;
+
+}
+.swiper-pagination{
+    position: static !important;
+    margin-top: 1rem;
+}
+.swiper-pagination-bullet{
+    width: 2rem !important;
+    height: 2rem !important;
+    border: 4px solid #BFBEBE !important;
+    background-color: #fff !important;
+}
+.swiper-pagination-bullet-active{
+    border-color: var(--base-coler) !important;
+}
