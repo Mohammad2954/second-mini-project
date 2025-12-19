@@ -10,6 +10,12 @@
     .home{
         height: 70rem;
     }
+    .contact-map{
+        display: none;
+    }
+    .contact{
+        margin: 0 auto;
+    }
     
 }
 @media screen and (max-width: 992px) {
@@ -120,7 +126,6 @@
     }
 }
 @media screen and (max-width: 576px) {
-
 }
 @media screen and (max-width: 480px) {
     .home__photo {

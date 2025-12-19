@@ -714,3 +714,89 @@ component
 .price-btn{
     margin: 3rem auto 5rem;
 }
+/*
+===============
+    contact
+===============
+*/
+.contactuc{
+
+}
+.contact-wrapper{
+    background-image: url(../images/image/map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0;
+}
+.contact-map{
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: absolute;
+    top: 21%;
+    left: 21%;
+    box-shadow: 0 0 4rem rgba(19,182,255,0.24);
+}
+.contact-map__icon{
+    width: 2rem;
+}
+.contact{
+    max-width: 50rem;
+    background-color: #fff;
+    box-shadow: 0 0 8rem rgba(19,182,255,0.24);
+    padding: 4rem 4.5rem;
+    margin-left: auto;
+    border-radius: 1rem;
+}
+.contact-form__title{
+    font-size: 3rem;
+    color: var(--base-coler);
+    font-family: var(--pop-bo);
+    margin-bottom: 3rem;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 42rem;
+}
+.contact-form__input{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 6rem rgba(96,233,255,0.27);
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-family: var(--pop-r);
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+.contact-form__input::placeholder{
+    color: inherit;
+}
+.contact-form__text{
+    height: 14rem;
+    resize: none;
+}
+.contact-form__btn{
+    border: none;
+    font-family: var(--pop-s);
+    color: #fff;
+    background-color: var(--base-coler);
+    border-radius: 10rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
