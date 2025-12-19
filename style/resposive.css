@@ -115,6 +115,9 @@
     .nav__toggle-icon{
         display: flex;
     }
+    .price-btn{
+        width: 100% !important;
+    }
 }
 @media screen and (max-width: 576px) {
 

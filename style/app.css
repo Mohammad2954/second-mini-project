@@ -216,6 +216,27 @@ a{
 /*
 helper classes
 */
+.oreng{
+    background-color: var(--orenge);
+}
+.purple{
+    background-color: var(--purple);
+}
+.pink{
+    background-color: var(--pink);
+}
+.shadow-oreng{
+    box-shadow:0 1.6rem 2.8rem rgba(245, 127, 23, 0.24) ;
+}
+.shadow-purple{
+    box-shadow:0 1.6rem 2.8rem rgba(128, 58, 251, 0.24) ;
+}
+.shadow-pink{
+    box-shadow:0 1.6rem 2.8rem rgba(245, 39, 108, 0.24) ;
+}
+.pad-0{
+    padding: 0;
+}
 .align-item-center{
     align-items: center;
 }
@@ -228,6 +249,9 @@ helper classes
 }
 .h-100{
     height: 100%;
+}
+.shadow{
+    box-shadow: 0 0 6rem rgba(96, 233, 235, 0.27);
 }
 /*
 component
@@ -283,7 +307,7 @@ component
 }
 .section-head__caption{
     color: var(--base-coler);
-    margin: 2rem 0 3rem 0;
+    margin: 2rem -2rem 3rem -2rem;
     letter-spacing: 0.25rem;
 }
 .section-head__line{
@@ -630,4 +654,63 @@ component
 }
 .swiper-pagination-bullet-active{
     border-color: var(--base-coler) !important;
+}
+/*
+=================
+    pricing
+=================
+*/
+.pricing{
+    transform: skewY(-6deg);
+    -webkit-transform: skewY(-6deg);
+    -moz-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    -o-transform: skewY(-6deg);
+    box-shadow:0 0 6rem rgba(19,182,255,0.25);
+    margin-top: 10rem;
+    padding: 1rem 0;
+    padding-bottom: 12rem;
+}
+.price-box{
+}
+.price-box__head{
+    text-align: center;
+    padding: 2rem;
+}
+.price-box__title{
+    font-family: var(--pop-s);
+    font-size: 3rem;
+}
+.price-box__price{
+    font-family: var(--pop-s);
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+.price-box__title,
+.price-box__price,
+.price-box__caption{
+    color: #fff;
+}
+.price-box__caption{
+    margin-bottom: 1.2rem;
+    display: block;
+}
+.price-list{
+    max-width: 17rem;
+    margin: 3rem auto 2.5rem auto;
+}
+.icon-price{
+    margin-right: .6rem;
+}
+.price-list__item{
+    margin-bottom: 3rem;
+    padding-left: .6rem;
+}
+.price-list__item:last-child{
+    margin-bottom: 0;
+}
+.price-btn{
+    margin: 3rem auto 5rem;
 }
