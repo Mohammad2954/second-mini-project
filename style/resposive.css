@@ -64,7 +64,7 @@
     }
     .resume-list{
         flex-direction: row;
-        gap: 2rem;
+        gap: .5rem;
         justify-content: flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -72,14 +72,28 @@
         box-shadow: none;
         background-color: none;
     }
+    .portfolio-list{
+        gap: .5rem;
+    }
     .resume-list__item{
         background-color: var(--base-coler);
         margin: 0;
         padding: 1rem 3rem;
         border-radius: 3rem;
+        background-color: #fff;
+        transition: all 200ms ease-in;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+}
+    .resume-list__item--active{
+        background-color: var(--base-coler);
     }
     .resume-list__text{
         margin-left: 0;
+        font-family: var(--pop-r);
+        font-size: 1.6rem;
     }
     .resume-content--show{
         padding: 0;
@@ -133,6 +147,9 @@
     .footer-caption{
         font-size: 1rem;
         letter-spacing: 0.2rem;
+    }
+    .home {
+    height: 60rem;
     }
 }
 @media screen and (max-width: 480px) {

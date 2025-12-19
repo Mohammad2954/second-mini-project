@@ -67,14 +67,17 @@ a{
     gap: 3rem;
     z-index: 101;
 }
+.menu__item{
+    color: var(--text-color);
+}
 .menu__link{
     font-family: var(--pop-m);
-    color: var(--text-color);
-    transition: all 100ms ease-in;
-    -webkit-transition: all 100ms ease-in;
-    -moz-transition: all 100ms ease-in;
-    -ms-transition: all 100ms ease-in;
-    -o-transition: all 100ms ease-in;
+    color: inherit;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
 }
 .menu__link:hover{
     color: var(--base-coler);
@@ -241,11 +244,11 @@ helper classes
     align-items: center;
 }
 .skew{
-    transform: skewY(6deg);
-    -webkit-transform: skewY(6deg);
-    -moz-transform: skewY(6deg);
-    -ms-transform: skewY(6deg);
-    -o-transform: skewY(6deg);
+    transform:translateZ(0) skewY(6deg);
+    -webkit-transform:translateZ(0) skewY(6deg);
+    -moz-transform:translateZ(0) skewY(6deg);
+    -ms-transform:translateZ(0) skewY(6deg);
+    -o-transform:translateZ(0) skewY(6deg);
 }
 .h-100{
     height: 100%;
@@ -397,27 +400,33 @@ component
     background-position: bottom;
 }
 .box-services1{
-    background-color: #8540FF;
+    background-color: rgb(133, 64, 255);
+    box-shadow: 0 0 3.5rem rgba(133, 64, 255,.35);
     background-image: url(../images/box-shape/Shape1.png);
 }
 .box-services2{
-    background-color: #FFC50C;
+    background-color: rgb(255, 197, 12);
+    box-shadow: 0 0 3.5rem rgba(255,197,12,.35);
     background-image: url(../images/box-shape/Shape2.png);
 }
 .box-services3{
-    background-color: #EC407A;
+    background-color: rgb(236, 64, 122);
+    box-shadow: 0 0 3.5rem rgba(236, 64, 122,.35);
     background-image: url(../images/box-shape/Shape3.png);
 }
 .box-services4{
-    background-color: #FF6331;
+    background-color: rgb(255, 99, 49);
+    box-shadow: 0 0 3.5rem rgba(255, 99, 49,.35);
     background-image: url(../images/box-shape/Shape4.png);
 }
 .box-services5{
-    background-color: #13B6FF;
+    background-color: rgb(19, 182, 255);
+    box-shadow: 0 0 3.5rem rgba(19, 182, 255,.35);
     background-image: url(../images/box-shape/Shape5.png);
 }
 .box-services6{
-    background-color: #49AF46;
+    background-color: rgb(73, 175, 70);
+    box-shadow: 0 0 3.5rem rgba(73,175,70,.35);
     background-image: url(../images/box-shape/Shape6.png);
 }
 .box-services__title{
@@ -446,13 +455,13 @@ component
     margin-top: 10rem;
     box-shadow:0 0 6rem rgba(19,182,255,0.25);
     padding: 1rem 0;
-    transform:skewY(-6deg);
-    -webkit-transform:skewY(-6deg);
-    -moz-transform:skewY(-6deg);
-    -ms-transform:skewY(-6deg);
-    -o-transform:skewY(-6deg);
+    transform: translateZ(0) skewY(-6deg);
     background-color: var(--section-bgcolor);
     padding-bottom: 12rem;
+    -webkit-transform: translateZ(0) skewY(-6deg);
+    -moz-transform: translateZ(0) skewY(-6deg);
+    -ms-transform: translateZ(0) skewY(-6deg);
+    -o-transform: translateZ(0) skewY(-6deg);
 }
 .resume-list{
     box-shadow:0 0 2rem rgba(19,233,255,0.25);
@@ -670,11 +679,11 @@ component
 =================
 */
 .pricing{
-    transform: skewY(-6deg);
-    -webkit-transform: skewY(-6deg);
-    -moz-transform: skewY(-6deg);
-    -ms-transform: skewY(-6deg);
-    -o-transform: skewY(-6deg);
+    transform:translateZ(0) skewY(-6deg);
+    -webkit-transform:translateZ(0) skewY(-6deg);
+    -moz-transform:translateZ(0) skewY(-6deg);
+    -ms-transform:translateZ(0) skewY(-6deg);
+    -o-transform:translateZ(0) skewY(-6deg);
     box-shadow:0 0 6rem rgba(19,182,255,0.25);
     margin-top: 10rem;
     padding: 1rem 0;
@@ -682,6 +691,7 @@ component
     background-color: var(--section-bgcolor);
 }
 .price-box{
+    height: 54rem;
 }
 .price-box__head{
     text-align: center;
@@ -730,9 +740,6 @@ component
     contact
 ===============
 */
-.contactuc{
-
-}
 .contact-wrapper{
     background-image: url(../images/image/map.jpg);
     background-repeat: no-repeat;
