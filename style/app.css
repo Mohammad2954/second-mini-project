@@ -16,7 +16,7 @@
     --purple:#8540FF;
     --orenge-m:#F57F17;
     --base-coler:#0ABEAD;
-
+    --black:#000000;
     --text-color:#333333;
     --bgcolor:#fff;
     --section-bgcolor:#fff;
@@ -30,7 +30,7 @@ body{
     font-family: var(--pop-r);
     font-size: 1.6rem;
     font-weight: 1.5;
-    
+    background-color: var(--bgcolor);
 }
 a{
     text-decoration: none;
@@ -49,7 +49,7 @@ a{
     right: 0;
     left: 0;
     top: 0;
-    background-color: #fff;
+    background-color: var(--section-bgcolor);
 }
 .nav{
     display: flex;
@@ -258,7 +258,7 @@ component
 */
 .btn{
     font-family: var(--pop-s);
-    color: var(--bgcolor);
+    color: #fff;
     border-radius: 3rem;
     -webkit-border-radius: 3rem;
     -moz-border-radius: 3rem;
@@ -306,7 +306,7 @@ component
     font-size: 4.8rem;
 }
 .section-head__caption{
-    color: var(--base-coler);
+    color: var(--text-color);
     margin: 2rem -2rem 3rem -2rem;
     letter-spacing: 0.25rem;
 }
@@ -330,6 +330,7 @@ component
 }
 .about{
     display: flex;
+    background-color: var(--section-bgcolor);
 }
 .about-cover{
     width: 50%;
@@ -343,16 +344,17 @@ component
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
 }
-
 .about-content{
     width: 50%;
     padding: 5rem 0;
     padding-left: 2rem;
+    background-color: var(--section-bgcolor);
 }
 .about-content__title{
     font-family: var(--pop-s);
     font-size: 2.4rem;
     margin-bottom: 3rem;
+    color: var(--text-color);
 }
 .about-content__caption{
     color: var(--text-color);
@@ -421,19 +423,19 @@ component
 .box-services__title{
     font-family: var(--pop-bo);
     font-size: 2.4rem;
-    color: var(--section-bgcolor);
+    color: #fff;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
 .box-services__caption{
-    color: var(--section-bgcolor);
+    color: #fff;
     line-height: 2rem;
     height: 6rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
 }
 /*
 ===================
@@ -449,7 +451,7 @@ component
     -moz-transform:skewY(-6deg);
     -ms-transform:skewY(-6deg);
     -o-transform:skewY(-6deg);
-    background-color: var(--bgcolor);
+    background-color: var(--section-bgcolor);
     padding-bottom: 12rem;
 }
 .resume-list{
@@ -479,6 +481,7 @@ component
     position: relative;
     padding: 1rem 0;
     cursor: pointer;
+    color: var(--text-color);
 
 }
 .resume-list__item::before{
@@ -505,10 +508,7 @@ component
 .resume-list__item:last-child{
     margin-bottom: 0;
 }
-.resume-list__item--active{
-    color:#fff;
-    max-width:27rem;
-}
+
 .resume-list__item--active::before{
     width: 100%;
 }
@@ -526,6 +526,10 @@ component
     -moz-transition: all 250ms ease-in;
     -ms-transition: all 250ms ease-in;
     -o-transition: all 250ms ease-in;
+}
+.resume-list__item--active{
+    color:#fff ;
+    max-width:27rem;
 }
 .resume-content{
     border-left: 2px solid var(--base-coler);
@@ -588,6 +592,10 @@ component
 .resume-content__subtitle{
     font-family: var(--pop-s);
     margin-bottom: 1rem;
+    color: var(--text-color);
+}
+.resume-content__caption{
+    color: var(--text-color);
 }
 /*
 =====================
@@ -618,6 +626,7 @@ component
     -moz-transition: all 200ms ease-in;
     -ms-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
+    color: var(--text-color);
 }
 .portfolio-list__item--active{
     color: #fff;
@@ -670,6 +679,7 @@ component
     margin-top: 10rem;
     padding: 1rem 0;
     padding-bottom: 12rem;
+    background-color: var(--section-bgcolor);
 }
 .price-box{
 }
@@ -707,6 +717,7 @@ component
 .price-list__item{
     margin-bottom: 3rem;
     padding-left: .6rem;
+    color: var(--text-color);
 }
 .price-list__item:last-child{
     margin-bottom: 0;
@@ -730,7 +741,7 @@ component
     padding: 7rem 0;
 }
 .contact-map{
-    background-color: #fff;
+    background-color: var(--bgcolor);
     width: 6rem;
     height: 6rem;
     border-radius: 100%;
@@ -781,6 +792,7 @@ component
     font-family: var(--pop-r);
     font-size: 1.3rem;
     color: var(--text-color);
+    background-color:var(--bgcolor);
 }
 .contact-form__input::placeholder{
     color: inherit;
@@ -799,4 +811,32 @@ component
     font-size: 1.6rem;
     margin-top: 1rem;
     cursor: pointer;
+}
+/*
+===================
+       footer
+===================
+*/
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.footer-caption{
+    font-family: var(--pop-s);
+    letter-spacing: 0.5rem;
+    color: var(--text-color);
+}
+.footer-svg{
+    fill: var(--black);
+    margin-left: .3rem;
+    transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+}
+.footer-svg:hover{
+    fill: var(--base-coler);
 }
