@@ -101,19 +101,26 @@
     }
     .resume-content{
         border: none;
+    }.menu__item{
+        font-size: 1.5rem;
+    }
+    .cheng-them{
+        right: 54rem;
     }
     
 }
 @media screen and (max-width: 768px) {
+    .cheng-them{
+        right: 6rem;
+    }
     .menu{
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
-        background-color: aqua;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+        background-color: var(--section-bgcolor);
         height: 0;
         overflow: hidden;
         transition: all 250ms ease-in-out;
@@ -121,7 +128,8 @@
         -moz-transition: all 250ms ease-in-out;
         -ms-transition: all 250ms ease-in-out;
         -o-transition: all 250ms ease-in-out;
-}
+    }
+    
     .menu--open{
         height: 28rem;
     }

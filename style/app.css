@@ -22,6 +22,11 @@
     --section-bgcolor:#fff;
 
 }
+:root.dark{
+    --text-color:#95A5C6;
+    --bgcolor:#161D26;
+    --section-bgcolor:#1F2935;
+}
 html{
     font-size: 10px;
 }
@@ -62,6 +67,11 @@ a{
     font-family: var(--pop-bl);
     color: var(--base-coler);
 }
+.nav-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .menu{
     display: flex;
     gap: 3rem;
@@ -88,7 +98,6 @@ a{
 .nav__toggle-icon{
     display: none;
     cursor: pointer;
-    width: 5rem;
     height: 5rem;
     justify-content: center;
     align-items: center;
@@ -769,7 +778,7 @@ component
 }
 .contact{
     max-width: 50rem;
-    background-color: #fff;
+    background-color: var(--section-bgcolor);
     box-shadow: 0 0 8rem rgba(19,182,255,0.24);
     padding: 4rem 4.5rem;
     margin-left: auto;
@@ -830,13 +839,17 @@ component
     align-items: center;
     margin-top: 1rem;
 }
+.footer-social{
+    display: flex;
+    flex-flow: row;
+}
 .footer-caption{
     font-family: var(--pop-s);
     letter-spacing: 0.5rem;
     color: var(--text-color);
 }
 .footer-svg{
-    fill: var(--black);
+    fill: var(--text-color);
     margin-left: .3rem;
     transition: all 200ms ease-in;
     -webkit-transition: all 200ms ease-in;
@@ -846,4 +859,22 @@ component
 }
 .footer-svg:hover{
     fill: var(--base-coler);
+}
+.cheng-them{
+    width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--text-color) ;
+    border-radius: 100%;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: .4rem;
+    margin-right: 2rem;
+    position: absolute;
+    right: 63rem;
+}
+.theme{
+    fill: var(--bgcolor);
+    stroke: var(--bgcolor);
 }
