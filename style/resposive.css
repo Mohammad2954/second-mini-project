@@ -110,6 +110,9 @@
     
 }
 @media screen and (max-width: 768px) {
+    *{
+        cursor: default;
+    }
     .cheng-them{
         right: 6rem;
     }
